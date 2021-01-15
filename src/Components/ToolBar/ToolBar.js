@@ -3,24 +3,23 @@ import './ToolBar.css'
 export class ToolBar extends Component {
     render() {
         return (
-            <div className="ToolBar">
-            <div className="bobbax-toolbar-component">
-                <div className="gradient">
+                <div className="bobbax-toolbar-component">
+                    <div className="gradient">
 
-                </div>
-                <div className="bottom-left">
-                    <ul className="list-group">
+                    </div>
+                    <div className="bottom-left">
+                        <ul className="list-group">
+                            <li className="list-group-item">
+                    <i className="icon icon-habbo"></i>
+                </li>
                         <li className="list-group-item">
-                            <i className="icon icon-habbo"></i>
-                        </li>
-                        <li className="list-group-item">
-                            <i className="icon icon-rooms"></i>
-                        </li>
-                        <li className="list-group-item">
-                            <i className="icon icon-catalog"></i>
-                        </li>
-                    </ul>
-                </div>
+                    <i className="icon icon-rooms"></i>
+                </li>
+                    <li className="list-group-item">
+                    <i className="icon icon-catalog"></i>
+                </li>
+            </ul>
+        </div >
                 <div className="bottom-center-left">
                     <ul className="list-group">
                         <li className="list-group-item avatar-image">
@@ -45,8 +44,7 @@ export class ToolBar extends Component {
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
+                </div >
         )
     }
 }

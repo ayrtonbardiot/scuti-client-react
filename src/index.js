@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import RoomView from './Components/Room/RoomView'
+import RoomTool from './Components/Room/RoomTool'
 import FurniViewer from './Components/Furni/FurniViewer'
 import LandingView from './Components/LandingView/LandingView'
 import ToolBar from './Components/ToolBar/ToolBar'
+import ChatInput from './Components/Chat/ChatInput'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,6 +15,8 @@ ReactDOM.render(
     <FurniViewer />
     <LandingView />
     <ToolBar />
+    <RoomTool />
+    <ChatInput />
   </React.StrictMode>,
   document.getElementById('root')
 );
