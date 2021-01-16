@@ -7,6 +7,7 @@ import FurniViewer from './Components/Furni/FurniViewer'
 import LandingView from './Components/LandingView/LandingView'
 import ToolBar from './Components/ToolBar/ToolBar'
 import ChatInput from './Components/Chat/ChatInput'
+import Navigator from './Components/Navigator/Navigator'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
     <ToolBar />
     <RoomTool />
     <ChatInput />
+    <Navigator />
   </React.StrictMode>,
   document.getElementById('root')
 );

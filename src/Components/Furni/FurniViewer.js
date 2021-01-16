@@ -3,8 +3,8 @@ import './FurniViewer.css'
 export class FurniViewer extends Component {
     render() {
         return (
-            <div className="frame">
-                <div className="tab-container">
+            <div className="frame-furni">
+                <div className="tab-container-furni">
                     <button>Move</button>
                     <button>Rotate</button>
                     <button>Pick up</button>
