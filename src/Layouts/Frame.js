@@ -4,17 +4,16 @@ import { Slot } from 'react-slot'
 import './Frame.css'
 
 export class Frame extends Component {
+    static Header = props => (
+        <div className="header" id="dragger">{props.children}</div>
+      );
+      static Content = props => <div className="content">{props.children}</div>;
     render() {
         return (
             <div>
                 <Draggable>
                     <div className="frame" style={{ width: this.props.width, height: this.props.height}}>
-                        <div className="header" id="dragger">
-                            <Slot name="header"></Slot>
-                        </div>
-                        <div className="content">
-                            <Slot></Slot>
-                        </div>
+                        {this.props.children}
                     </div>
                 </Draggable>
             </div>
