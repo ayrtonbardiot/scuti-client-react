@@ -9,6 +9,7 @@ import ToolBar from './Components/ToolBar/ToolBar'
 import ChatInput from './Components/Chat/ChatInput'
 import Navigator from './Components/Navigator/Navigator'
 import RoomCreator from './Components/Navigator/RoomCreator'
+import Catalog from './Components/Catalog/Catalog'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -21,6 +22,7 @@ ReactDOM.render(
     <ChatInput />
     <Navigator />
     <RoomCreator />
+    <Catalog />
   </React.StrictMode>,
   document.getElementById('root')
 );
