@@ -66,7 +66,7 @@ export class Navigator extends Component {
                                         <img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/user.png?raw=true" /> 69
                             </div>
                                     <div className="room-state">
-                                        <img v-if="room.state == 'password'" src="./../../../../public/img/rooms/locked_pw.png" />
+                                        <img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/rooms/locked_pw.png?raw=true" />
                                     </div>
                                     <div className="room-info"></div>
 
@@ -104,7 +104,7 @@ export class Navigator extends Component {
                                         <img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/user.png?raw=true" /> 420
                                         </div>
                                     <div className="room-state">
-                                        <img src="./../../../../public/img/rooms/locked.png" />
+                                        <img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/rooms/locked.png?raw=true" />
                                     </div>
                                     <div className="room-info"></div>
 

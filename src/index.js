@@ -8,6 +8,7 @@ import LandingView from './Components/LandingView/LandingView'
 import ToolBar from './Components/ToolBar/ToolBar'
 import ChatInput from './Components/Chat/ChatInput'
 import Navigator from './Components/Navigator/Navigator'
+import RoomCreator from './Components/Navigator/RoomCreator'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
     <RoomTool />
     <ChatInput />
     <Navigator />
+    <RoomCreator />
   </React.StrictMode>,
   document.getElementById('root')
 );
