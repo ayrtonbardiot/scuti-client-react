@@ -19,8 +19,8 @@ export class Navigator extends Component {
                         <div className="navigatorDragger">
                             <div className="title">Navigator</div>
                             <div className="right">
-                                <button style={{ height: "22px;" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/question_mark.png?raw=true" /></button>
-                                <button style={{ height: "22px;" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/cross.png?raw=true" /></button>
+                                <button style={{ height: "22px" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/question_mark.png?raw=true" /></button>
+                                <button style={{ height: "22px" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/cross.png?raw=true" /></button>
                             </div>
                         </div>
                     </div>

@@ -10,8 +10,8 @@ export class Catalog extends Component {
                     <div className="navigatorDragger">
                         <div className="title">Catalog</div>
                         <div className="right">
-                            <button style={{ height: "22px;" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/question_mark.png?raw=true" /></button>
-                            <button style={{ height: "22px;" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/cross.png?raw=true" /></button>
+                            <button style={{ height: "22px" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/question_mark.png?raw=true" /></button>
+                            <button style={{ height: "22px" }}><img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/cross.png?raw=true" /></button>
                         </div>
                     </div>
                 </Frame.Header>
@@ -43,6 +43,12 @@ export class Catalog extends Component {
                                     <img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/diamonds.png?raw=true" style={{ float: "left" }} /> 5
                         </button>
                             </div>
+                        </div>
+                        <div className="right-panel-ctlg">
+                            <div className="tab-container">
+                                <button>caption</button>
+                            </div>
+                            <div className="separator"></div>
                         </div>
                     </div>
                 </Frame.Content>

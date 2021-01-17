@@ -10,6 +10,7 @@ import ChatInput from './Components/Chat/ChatInput'
 import Navigator from './Components/Navigator/Navigator'
 import RoomCreator from './Components/Navigator/RoomCreator'
 import Catalog from './Components/Catalog/Catalog'
+import Splash from './Components/Splash/Splash'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Navigator />
     <RoomCreator />
     <Catalog />
+    <Splash />
   </React.StrictMode>,
   document.getElementById('root')
 );

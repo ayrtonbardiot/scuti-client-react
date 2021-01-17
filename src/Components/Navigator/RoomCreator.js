@@ -34,7 +34,7 @@ export class RoomCreator extends Component {
                     </div>
                     <div className="right-panel">
                         <label style={{ marginLeft: "6px" }}>Room Model</label>
-                        <div className="scrollbox" style={{ width: "calc(100% + 6px)", height: "calc(100% - 27px)", marginTop: "-5px;" }}>
+                        <div className="scrollbox" style={{ width: "calc(100% + 6px)", height: "calc(100% - 27px)", marginTop: "-5px" }}>
                             <div className="room-selector">
                                 <img src="https://github.com/kozennnn/scuti-client/blob/master/public/img/rooms/12.png?raw=true" />
                                 <div className="check"></div>
