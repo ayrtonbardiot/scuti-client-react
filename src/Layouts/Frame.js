@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Draggable from 'react-draggable'
-import { Slot } from 'react-slot'
 import './Frame.css'
 
 export class Frame extends Component {
