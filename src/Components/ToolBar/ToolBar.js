@@ -3,7 +3,7 @@ import './ToolBar.css'
 export class ToolBar extends Component {
     render() {
         return (
-                <div className="bobbax-toolbar-component">
+                <div className="bobbax-toolbar-component" style={{ zIndex: 2}}>
                     <div className="gradient">
 
                     </div>

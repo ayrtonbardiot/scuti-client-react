@@ -23,7 +23,7 @@ class RoomEngine {
         if(this.room != null){
             this.room.removeChildren()
         }
-        Emitter.emit('ROOM_CREATING', 999999999)
+        Emitter.emit('ROOM_CREATING', 1)
         this.room = Room.create(this.shroom, {
             tilemap: tiles
         })

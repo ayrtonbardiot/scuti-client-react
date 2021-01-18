@@ -4,7 +4,7 @@ import './ChatInput.css'
 export class ChatInput extends Component {
     render() {
         return (
-                <div className="scuti-room-chatinput-component">
+                <div className="scuti-room-chatinput-component" style={{ zIndex: 2}}>
                     <div className="chatinput-container">
                         <input type="text" name="chat-input" className="chat-input" />
                         <div className="scuti-room-chatinput-styleselector-component">
