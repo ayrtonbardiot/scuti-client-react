@@ -7,7 +7,8 @@ import {
     Shroom,
     loadRoomTexture,
 } from "@jankuss/shroom";
-import * as index from '../index'
+import Emitter from '../Emitter'
+
 
 class RoomEngine {
     constructor() {
@@ -21,6 +22,7 @@ class RoomEngine {
         if(this.room != null){
             this.room.removeChildren()
         }
+        Emitter.emit('ROOM_CREATING', 999999999)
         this.room = Room.create(this.shroom, {
             tilemap: tiles
         })
