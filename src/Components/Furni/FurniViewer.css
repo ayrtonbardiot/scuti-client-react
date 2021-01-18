@@ -1,7 +1,6 @@
 .frame-furni {
     position: fixed;
     width: 230px;
-    z-index: 1;
     height: 270px;
     bottom: 75px;
     right: 20px;

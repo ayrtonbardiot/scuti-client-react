@@ -10,7 +10,6 @@ img, svg {
     bottom: 0;
     width: 100%;
     height: 50px;
-    z-index: 1000;
 }
 .bottom-left {
     height: 100%;

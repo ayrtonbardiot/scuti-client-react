@@ -6,7 +6,6 @@
     width: 100%;
     bottom: 10px;
     pointer-events: none;
-    z-index: 1000;
 }
 .scuti-room-chatinput-component .chatinput-container {
     position: relative;
@@ -29,7 +28,6 @@
     right: 0;
     margin: auto;
     background: #fff;
-    z-index: 1;
 }
 .scuti-room-chatinput-component .chatinput-container .chat-input {
     width: calc(100% - 25px);
