@@ -11,6 +11,7 @@ import Navigator from './Components/Navigator/Navigator'
 import RoomCreator from './Components/Navigator/RoomCreator'
 import Catalog from './Components/Catalog/Catalog'
 import Splash from './Components/Splash/Splash'
+import RoomEngine from './Shroom/RoomEngine'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -29,7 +30,21 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+const Engine = new RoomEngine();
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals(console.log);
+
+/*    <FurniViewer />
+    <LandingView />
+    <ToolBar />
+    <RoomTool />
+    <ChatInput />
+    <Navigator />
+    <RoomCreator />
+    <Catalog />
+    <Splash />*/
+
+export default Engine
+

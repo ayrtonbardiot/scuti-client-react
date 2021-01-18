@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Navigator.css'
 import Frame from '../../Layouts/Frame'
+import * as _roomEngine from '../../index'
 
 export class Navigator extends Component {
     constructor(props) {
@@ -31,7 +32,7 @@ export class Navigator extends Component {
                         <button onClick={() => this.setState({ tabs: 'public' })}>Public</button>
                         <button onClick={() => this.setState({ tabs: 'popular' })}>Popular</button>
                         <button onClick={() => this.setState({ tabs: 'events' })}>Events</button>
-                        <button onClick={() => this.setState({ tabs: 'me'})}>Me</button>
+                        <button onClick={() => this.setState({ tabs: 'me' })}>Me</button>
                     </div>
 
                     {this.state.tabs === 'public' ?
@@ -59,7 +60,51 @@ export class Navigator extends Component {
                                 <div className="roomtab">
                                     <div className="thumbnail" style={{ backgroundImage: "url(https://github.com/kozennnn/scuti-client/blob/master/public/img/2.png?raw=true" }}>
                                     </div>
-                                    <div className="text">
+                                    <div onClick={() => _roomEngine.default.createRoom(`
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxx000000000xx
+xxxxxxxxxxxxxxxxxxxxxxxx00000000xx
+xxxxxxxxxxxxxxxxxxxxxxxxx0000000xx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxx000000000xxxxx
+xxxxxxxxxxxxxxxxxxxx000000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx000000000000x
+xxxxxxxxxxxxxxxxxxxxx000000000000x
+xxxxxxxxxxxxxxxxxxxxx000000000000x
+x00000000xxxxxxxxxxxx000000000000x
+x00000000xxxxxxxxxxxx0000000000000
+x00000000xxxxxxxxxxxx0000000000000
+x00000000xxxxxxxxxxxx000000000000x
+x00000000xxxxxxxxxxxx000000000000x
+x00000000xxxxxxxxxxxx000000000000x
+x00000000xxxxxxxxxxxx000000000000x
+x00000000xxxxxxxxxxxx00000000xxxxx
+xxxx00xxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxxxxxxxxxxxxxxxxxxx00000000xxxxx
+xxxx0xxxxxxxxxxxxxxxxx00xxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   `)} className="text">
                                         Peta soon<br /><span style={{ color: "#8F8E90", fontSize: "13px" }}>Owner: </span><span style={{ color: "#72BBC1", fontSize: "13px" }}>nttZx</span>
                                     </div>
                                     <div className="usercount">
@@ -95,7 +140,7 @@ export class Navigator extends Component {
                                     </div>
                                 </div>
                                 <div className="roomtab">
-                                    <div className="thumbnail" style={{backgroundImage: "url(https://github.com/kozennnn/scuti-client/blob/master/public/img/2.png?raw=true)" }}>
+                                    <div className="thumbnail" style={{ backgroundImage: "url(https://github.com/kozennnn/scuti-client/blob/master/public/img/2.png?raw=true)" }}>
                                     </div>
                                     <div className="text">
                                         Peta 2<br /><span style={{ color: "#8F8E90", fontSize: "13px" }}>Owner: </span><span style={{ color: "#72BBC1", fontSize: "13px" }}>nttZx</span>
@@ -125,6 +170,9 @@ export class Navigator extends Component {
 
             </Frame>
         )
+    }
+    createRoom() {
+
     }
 }
 
