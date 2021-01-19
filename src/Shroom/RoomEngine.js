@@ -18,6 +18,7 @@ class RoomEngine {
         this.appl = application
         this.room = null;
         this.avatar = null;
+        this.furni = null;
     }
     createRoom(tiles) {
         if(this.room != null){
@@ -31,6 +32,17 @@ class RoomEngine {
             this.avatar.move(pos.roomX, pos.roomY, pos.roomZ)
         }
         this.addUser()
+        this.furni = new FloorFurniture({
+            roomX: 17,
+            roomY: 22,
+            roomZ: 0,
+            direction: 4,
+            type: "club_sofa",
+          });
+          this.furni.onClick = (event) => {
+            Emitter.emit('FURNI_CLICKED')
+        }
+          this.room.addRoomObject(this.furni)
         this.appl.stage.addChild(RoomCamera.forScreen(this.room));
     }
     addUser(){
